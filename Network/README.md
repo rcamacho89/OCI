@@ -42,3 +42,5 @@ terraform init
 terraform plan
 
 terraform apply
+
+# Once you have your network infrastructure deployed, you can go ahead and create two instances, one using the VCN 1 and other in the VCN 2, test the connection on port 22 from the VM in the VCN 1 to the VM in the VCN 2. Now that you got the idea, you can customize it for your case !
