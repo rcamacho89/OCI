@@ -31,10 +31,14 @@ This is our reference Architecture for the case : [Oracle Reference Architecture
 
 First, you have to create an user with with enough privileges in OCI, for example of an IAM Policy: Allow Group X to manage virtual-network-family in Compartment Y. After that you can generate the API Key for the user !
 
+If you are not aware of how Terraform works with the basics, consider to go to the Webpage [Terraform OCI provider](https://registry.terraform.io/providers/oracle/oci/latest/docs) and read the documentation !
+
 Once you have Terraform in your local machine Windows/Linux, you have to follow the Workflow :
 
 INIT --> PLAN --> APPLY
 
 terraform init
+
 terraform plan
+
 terraform apply
