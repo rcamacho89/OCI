@@ -1,11 +1,11 @@
 output vcn_a_id {
   value       = oci_core_vcn.vcn_a.id
-  description = "The VCN A OCID."
+  description = "The VCN 1 OCID."
 }
 
 output vcn_b_id {
   value       = oci_core_vcn.vcn_b.id
-  description = "The VCN B OCID."
+  description = "The VCN 2 OCID."
 }
 
 output lpg_1 {
