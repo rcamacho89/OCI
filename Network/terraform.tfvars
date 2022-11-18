@@ -23,5 +23,5 @@ open_to_the_world = "0.0.0.0/0"
 local_peering_gateway_display_name_a = "LPG-A-TO-B"
 local_peering_gateway_display_name_b = "LPG-B-TO-A"
 
-security_list_name_a = "SG A"
-security_list_name_b = "SG B"
+security_list_name_a = "SG-A"
+security_list_name_b = "SG-B"
