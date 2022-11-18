@@ -7,7 +7,7 @@ Notice that we will cover just ''**Always free resources**" in OCI.
 
 # Files
 
-provider.tf --> Where we declare which provider we are using, in this case we are working with OCI.
+provider.tf --> Where we declare which provider we are using in Terraform, in this case we are working with OCI.
 
 main.tf --> Here we have the resources that we are creating such as VCN's, Route Tables, Internet Gateways, Security List and etc.
 
