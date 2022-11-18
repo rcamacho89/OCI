@@ -33,7 +33,7 @@ First, you have to create an user with with enough privileges in OCI, for exampl
 
 If you are not aware of how Terraform works with the basics, consider to go to the Webpage [Terraform OCI provider](https://registry.terraform.io/providers/oracle/oci/latest/docs) and read the documentation !
 
-Once you have Terraform in your local machine Windows/Linux, you have to follow the Workflow :
+### TERRAFORM WORKFLOW
 
 INIT --> PLAN --> APPLY
 
