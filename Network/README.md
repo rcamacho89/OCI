@@ -1,6 +1,6 @@
 # Oracle Cloud Infrastructure
 
-Hi ! In this tutorial, we are going to create a Network Infrastructure with a Local Peering Gateway using Terraform, the purpose is to connect two VCN's, so this way the VCN's can interact with each other.
+Hi ! We are going to create a Network Infrastructure with a Local Peering Gateway using Terraform, the purpose is to connect two VCN's, so this way the VCN's can interact with each other.
 
 Notice that we will cover just ''**Always free resources**" in OCI.
 
