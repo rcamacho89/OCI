@@ -142,7 +142,7 @@ resource "oci_core_subnet" "subnet_b" {
     security_list_ids = [oci_core_security_list.security_list_b.id]
 }
 
-## SECURITY LIST A
+## SECURITY LIST B
 
 resource "oci_core_security_list" "security_list_b" {
     #Required
@@ -170,6 +170,8 @@ resource "oci_core_security_list" "security_list_b" {
 
 ## Local Peering Gateway
 
+## LPG-1
+
 resource "oci_core_local_peering_gateway" "test_local_peering_gateway_a" {
     #Required
     compartment_id = var.compartment_id
@@ -178,6 +180,8 @@ resource "oci_core_local_peering_gateway" "test_local_peering_gateway_a" {
     display_name = var.local_peering_gateway_display_name_a
     peer_id = oci_core_local_peering_gateway.test_local_peering_gateway_b.id
 }
+
+## LPG-2
 
 resource "oci_core_local_peering_gateway" "test_local_peering_gateway_b" {
     #Required
