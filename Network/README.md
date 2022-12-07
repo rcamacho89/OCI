@@ -42,7 +42,12 @@ You can see the details in the Terraform files.
 
 ## HOW TO USE IT
 
-First, you have to create an user with with sufficient privileges in OCI, for example of an IAM Policy: Allow Group X to manage virtual-network-family in Compartment Y. After that you can generate the API Key for the user ! Remember that you need to adjust the Policy based on the resources that you will work with.
+First, you have to create an user with with sufficient privileges in OCI, for example of an IAM Policy: 
+
+- Allow Group X to manage virtual-network-family in compartment Y
+- Allow Group X to manage compartments in compartment Y
+
+After that you can generate the API Key for the user ! Remember that you need to adjust the Policy based on the resources that you will work with.
 
 Get your compartment id and put your information in the blank fields in the terraform.tfvars.
 
