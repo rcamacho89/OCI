@@ -1,3 +1,8 @@
+output network_compartment {
+    value = oci_identity_compartment.network_compartment.id
+    description = "The Network Compartment OCID."
+}
+
 output vcn_a_id {
   value       = oci_core_vcn.vcn_a.id
   description = "The VCN 1 OCID."
