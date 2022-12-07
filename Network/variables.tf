@@ -3,6 +3,8 @@ variable "tenancy_ocid" {}
 variable "user_ocid" {}
 variable "fingerprint" {}
 variable "private_key_path" {}
+variable "network_compartment_name" {}
+variable "network_compartment_description" {}
 variable "vcn_name_a" {}
 variable "vcn_name_b" {}
 variable "cidr_block_vcn_a" {}
