@@ -5,6 +5,9 @@ fingerprint = ""
 private_key_path = ""
 compartment_id = ""
 
+network_compartment_name = "Network_Resources"
+network_compartment_description = "Network Compartment."
+
 vcn_name_a = "VCN-1"
 cidr_block_vcn_a = "10.0.0.0/16"
 subnet_a_cidr_block = "10.0.0.0/16"
