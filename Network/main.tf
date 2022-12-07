@@ -16,7 +16,6 @@ resource "oci_core_internet_gateway" "igw_1" {
 
     #Optional
     display_name = var.internet_gateway_display_name_a
-    # route_table_id = oci_core_route_table.route_table_a.id
 }
 
 ## ROUTE TABLE A
