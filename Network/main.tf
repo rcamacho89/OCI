@@ -1,9 +1,19 @@
+## Network Compartment
+
+resource "oci_identity_compartment" "network_compartment" {
+    #Required
+    compartment_id = var.compartment_id
+    description = var.network_compartment_description
+    name = var.network_compartment_name
+    enable_delete = true
+}
+
 ## VCN A
 
 resource "oci_core_vcn" "vcn_a" {
   dns_label      = "internal"
   cidr_block     = var.cidr_block_vcn_a
-  compartment_id = var.compartment_id
+  compartment_id = oci_identity_compartment.network_compartment.id
   display_name   = var.vcn_name_a
 }
 
@@ -11,7 +21,7 @@ resource "oci_core_vcn" "vcn_a" {
 
 resource "oci_core_internet_gateway" "igw_1" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_a.id
 
     #Optional
@@ -22,7 +32,7 @@ resource "oci_core_internet_gateway" "igw_1" {
 
 resource "oci_core_route_table" "route_table_a" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_a.id
 
     #Optional
@@ -48,7 +58,7 @@ resource "oci_core_route_table" "route_table_a" {
 resource "oci_core_subnet" "subnet_a" {
     #Required
     cidr_block = var.subnet_a_cidr_block
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_a.id
 
     #Optional
@@ -61,7 +71,7 @@ resource "oci_core_subnet" "subnet_a" {
 
 resource "oci_core_security_list" "security_list_a" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_a.id
     display_name = var.security_list_name_a
 
@@ -87,7 +97,7 @@ resource "oci_core_security_list" "security_list_a" {
 resource "oci_core_vcn" "vcn_b" {
   dns_label      = "internal"
   cidr_block     = var.cidr_block_vcn_b
-  compartment_id = var.compartment_id
+  compartment_id = oci_identity_compartment.network_compartment.id
   display_name   = var.vcn_name_b
 }
 
@@ -95,7 +105,7 @@ resource "oci_core_vcn" "vcn_b" {
 
 resource "oci_core_internet_gateway" "igw_2" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_b.id
 
     #Optional
@@ -107,7 +117,7 @@ resource "oci_core_internet_gateway" "igw_2" {
 
 resource "oci_core_route_table" "route_table_b" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_b.id
 
     #Optional
@@ -132,7 +142,7 @@ resource "oci_core_route_table" "route_table_b" {
 resource "oci_core_subnet" "subnet_b" {
     #Required
     cidr_block = var.subnet_b_cidr_block
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_b.id
 
     #Optional
@@ -145,7 +155,7 @@ resource "oci_core_subnet" "subnet_b" {
 
 resource "oci_core_security_list" "security_list_b" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_b.id
     display_name = var.security_list_name_b
 
@@ -173,7 +183,7 @@ resource "oci_core_security_list" "security_list_b" {
 
 resource "oci_core_local_peering_gateway" "test_local_peering_gateway_a" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_a.id
 
     display_name = var.local_peering_gateway_display_name_a
@@ -184,7 +194,7 @@ resource "oci_core_local_peering_gateway" "test_local_peering_gateway_a" {
 
 resource "oci_core_local_peering_gateway" "test_local_peering_gateway_b" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = oci_identity_compartment.network_compartment.id
     vcn_id = oci_core_vcn.vcn_b.id
 
     display_name = var.local_peering_gateway_display_name_b
