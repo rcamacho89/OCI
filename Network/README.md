@@ -26,6 +26,19 @@ This is our reference Architecture for the case : [Oracle Reference Architecture
 
 ![enter image description here](https://docs.oracle.com/en-us/iaas/Content/Resources/Images/network_local_peering_basic.png)
 
+## Resources
+
+We are creating the following resources:
+
+- 1 Compartment.
+- 2 VCN's.
+- 2 Internet Gateways.
+- 2 Subnets.
+- 2 Route tables, each one with 2 rules.
+- 2 Security List, each one with one Egress and Ingress rule.
+- 2 Local Peering Gateways.
+
+You can see the details in the files.
 
 ## HOW TO USE IT
 
