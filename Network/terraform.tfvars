@@ -1,9 +1,9 @@
-region = "sa-saopaulo-1"
+region = ""
 tenancy_ocid = ""
 user_ocid = ""
 fingerprint = ""
 private_key_path = ""
-compartment_id = "ocid1.compartment.oc1..aaaaaaaafrk3ytxwbe5zfzjvhm53wgqjzggvd2arfk35somep6lk3rioiv7a"
+compartment_id = ""
 
 network_compartment_name = "Network_Resources"
 network_compartment_description = "Network Compartment."
