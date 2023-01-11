@@ -3,7 +3,7 @@ tenancy_ocid = ""
 user_ocid = ""
 fingerprint = ""
 private_key_path = ""
-compartment_id = ""
+compartment_id = "ocid1.compartment.oc1..aaaaaaaafrk3ytxwbe5zfzjvhm53wgqjzggvd2arfk35somep6lk3rioiv7a"
 
 network_compartment_name = "Network_Resources"
 network_compartment_description = "Network Compartment."
