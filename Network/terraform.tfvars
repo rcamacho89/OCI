@@ -1,4 +1,4 @@
-region = ""
+region = "sa-saopaulo-1"
 tenancy_ocid = ""
 user_ocid = ""
 fingerprint = ""
