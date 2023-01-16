@@ -42,7 +42,7 @@ You can see the details in the Terraform files.
 
 ## HOW TO USE IT
 
-First, you have to create an user with with sufficient privileges in OCI, for example of an IAM Policy: 
+First, you have to create an user with sufficient privileges in OCI, for example of an IAM Policy: 
 
 - Allow Group X to manage virtual-network-family in compartment Y
 - Allow Group X to manage compartments in compartment Y
