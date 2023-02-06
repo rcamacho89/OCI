@@ -9,9 +9,9 @@ Notice that we will cover just ''**Always free resources**" in OCI.
 
 provider.tf --> Where we declare which provider we are using in Terraform, in this case we are working with OCI.
 
-Network.tf --> Here we have the resources that we are creating such as VCN's, Route Tables, Internet Gateways, Security List and etc.
+network.tf --> Here we have the resources that we are creating such as VCN's, Route Tables, Internet Gateways, Security List and etc.
 
-Compute.tf --> Here we have the compute resources, instance-a and instance-b.
+compute.tf --> Here we have the compute resources, instance-a and instance-b.
 
 lb.tf --> Here we have the load balancer structure.
 
