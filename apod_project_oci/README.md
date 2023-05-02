@@ -26,7 +26,7 @@ Now we can jump to the Architecture.
 
 ## Architecture
 
-![Hashicorp_Terraform_Associate_v1](https://user-images.githubusercontent.com/86194197/216858392-d461a9bd-de44-45d4-b02b-e13d43389306.jpg)
+![Arquitecture-APOD](https://user-images.githubusercontent.com/86194197/235654401-ca8e978d-a1d6-474b-bd22-11e6c3c41ac1.jpg)
 
 ## Resources
 
